@@ -66,7 +66,15 @@ function Questions() {
         }
         
         else {
-            setCurrentQuestion(0);
+            document.querySelector('#container').innerHTML='<h1>Quiz Over!</h1><h2>Your final score is: ' + score +' out of '+question.length+ '</h2>';
+            if(score == question.lenght ){
+                document.querySelector('#container').innerHTML +='<h2>congats you scored perfect</h2>';
+            }else if(score >= question.length/2){
+                document.querySelector('#container').innerHTML +='<h2>you have passed the quiz </h>'
+            }else{
+                document.querySelector('#container').innerHTML +='<h2>better luck next time</h>'
+            }
+            return;
         }
         console.log(question[currentQuestion].q);
     }
@@ -86,7 +94,7 @@ function Questions() {
     
   return (
 
-    <div className='justify-center items-center flex flex-col h-screen'>
+    <div id="container" className='justify-center items-center flex flex-col h-screen'>
         <h1 className='text-2xl font-bold'>Score: {score}</h1>
         <div className='flex flex-col gap-1 justify-center items-start bg-slate-200 rounded-lg p-5'>
        <h1>Q:  {question[currentQuestion].q}</h1>
