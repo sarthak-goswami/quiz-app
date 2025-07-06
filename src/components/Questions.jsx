@@ -4,52 +4,52 @@ import { useState } from 'react';
 function Questions() {
     const question = [
         {
-    q: "What is the SI unit of electric current?",
+    q: "1 What is the SI unit of electric current?",
     options: ["Volt", "Ohm", "Ampere", "Watt"],
     ans: 2
     },
     {
-        q: "Which law states that the current through a conductor is directly proportional to the voltage across it?",
+        q: "2 Which law states that the current through a conductor is directly proportional to the voltage across it?",
         options: ["Ohm's Law", "Kirchhoff’s Current Law", "Faraday's Law", "Lenz's Law"],
         ans: 0
     },
     {
-        q: "Power in an electrical circuit is given by which formula?",
+        q: "3 Power in an electrical circuit is given by which formula?",
         options: ["V + I", "V / I", "V × I", "V / R"],
         ans: 2
     },
     {
-        q: "Which instrument is used to measure electric current?",
+        q: "4 Which instrument is used to measure electric current?",
         options: ["Voltmeter", "Ammeter", "Ohmmeter", "Wattmeter"],
         ans: 1
     },
     {
-        q: "In a purely resistive AC circuit, the current is:",
+        q: "5 In a purely resistive AC circuit, the current is:",
         options: ["Ahead of voltage", "Behind the voltage", "In phase with voltage", "Zero"],
         ans: 2
     },
     {
-        q: "Kirchhoff’s Voltage Law (KVL) is based on:",
+        q: "6 Kirchhoff’s Voltage Law (KVL) is based on:",
         options: ["Law of conservation of energy", "Law of conservation of mass", "Coulomb’s law", "Ohm’s law"],
         ans: 0
     },
     {
-        q: "Which of the following is a passive element?",
+        q: "7 Which of the following is a passive element?",
         options: ["Battery", "Diode", "Resistor", "Transistor"],
         ans: 2
     },
     {
-        q: "A capacitor blocks:",
+        q: "8 A capacitor blocks:",
         options: ["DC only", "AC only", "Both DC and AC", "Neither"],
         ans: 0
     },
     {
-        q: "In an RLC circuit at resonance, the:",
+        q: "9 In an RLC circuit at resonance, the:",
         options: ["Resistance is maximum", "Current is minimum", "Impedance is minimum", "Voltage is maximum"],
         ans: 2
     },
     {
-        q: "Which material is commonly used as the core in transformers?",
+        q: "10 Which material is commonly used as the core in transformers?",
         options: ["Aluminum", "Copper", "Silicon steel", "Plastic"],
         ans: 2
     }
