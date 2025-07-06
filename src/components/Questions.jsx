@@ -2,26 +2,58 @@ import React from 'react'
 import { useState } from 'react';
 
 function Questions() {
-    const question = [{
-        q:"What is the chemical symbol for gold?",
-        options: ["Au", "Ag", "Pb", "Fe"],
-        ans:0
-    },{q:"Which gas is most abundant in Earth's atmosphere?",
-        options: ["Nitrogen", "Oxygen", "Carbon Dioxide", "Hydrogen"],
-        ans:0
-    },{q:"What is the powerhouse of the cell?", 
-        options: ["Mitochondria", "Nucleus", "Ribosome", "Endoplasmic Reticulum"],
-        ans:0
-    },{q:"What part of the cell contains the genetic material?",
-        options: ["Nucleus", "Cytoplasm", "Cell Membrane", "Mitochondria"],
-        ans:0
-    },{q:"What is the process by which plants make their own food?", 
-        options: ["Photosynthesis", "Respiration", "Digestion", "Fermentation"]
-        ,ans:0
-    },{q:"What is the largest organ in the human body?",        
-        options: ["Skin", "Liver", "Heart", "Lungs"],
-        ans:0
-    }]
+    const question = [
+        {
+    q: "What is the SI unit of electric current?",
+    options: ["Volt", "Ohm", "Ampere", "Watt"],
+    ans: 2
+    },
+    {
+        q: "Which law states that the current through a conductor is directly proportional to the voltage across it?",
+        options: ["Ohm's Law", "Kirchhoff’s Current Law", "Faraday's Law", "Lenz's Law"],
+        ans: 0
+    },
+    {
+        q: "Power in an electrical circuit is given by which formula?",
+        options: ["V + I", "V / I", "V × I", "V² / R"],
+        ans: 2
+    },
+    {
+        q: "Which instrument is used to measure electric current?",
+        options: ["Voltmeter", "Ammeter", "Ohmmeter", "Wattmeter"],
+        ans: 1
+    },
+    {
+        q: "In a purely resistive AC circuit, the current is:",
+        options: ["Ahead of voltage", "Behind the voltage", "In phase with voltage", "Zero"],
+        ans: 2
+    },
+    {
+        q: "Kirchhoff’s Voltage Law (KVL) is based on:",
+        options: ["Law of conservation of energy", "Law of conservation of mass", "Coulomb’s law", "Ohm’s law"],
+        ans: 0
+    },
+    {
+        q: "Which of the following is a passive element?",
+        options: ["Battery", "Diode", "Resistor", "Transistor"],
+        ans: 2
+    },
+    {
+        q: "A capacitor blocks:",
+        options: ["DC only", "AC only", "Both DC and AC", "Neither"],
+        ans: 0
+    },
+    {
+        q: "In an RLC circuit at resonance, the:",
+        options: ["Resistance is maximum", "Current is minimum", "Impedance is minimum", "Voltage is maximum"],
+        ans: 2
+    },
+    {
+        q: "Which material is commonly used as the core in transformers?",
+        options: ["Aluminum", "Copper", "Silicon steel", "Plastic"],
+        ans: 2
+    }
+    ]
     
     let [score ,setScore] = useState(0);
     
@@ -40,7 +72,6 @@ function Questions() {
     }
     const checkAns =()=>{
         
-        console.log(input)
         clickNext();
         if(input == question[currentQuestion].ans){
             setScore(score + 1);
