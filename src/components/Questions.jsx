@@ -15,7 +15,7 @@ function Questions() {
     },
     {
         q: "Power in an electrical circuit is given by which formula?",
-        options: ["V + I", "V / I", "V × I", "V² / R"],
+        options: ["V + I", "V / I", "V × I", "V / R"],
         ans: 2
     },
     {
